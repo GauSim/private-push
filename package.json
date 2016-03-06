@@ -1,0 +1,16 @@
+{
+  "name": "private-push",
+  "version": "0.0.16",
+  "description": "",
+  "main": "private-push.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "private-push": "node private-push http://192.168.99.100:32770",
+    "postversion": "git push && git push --tags"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.99.100:32770"
+  },
+  "author": "Simon Gausmann",
+  "license": "ISC"
+}
